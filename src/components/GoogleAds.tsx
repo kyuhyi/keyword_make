@@ -29,7 +29,7 @@ export default function GoogleAds({ slot, className = "" }: GoogleAdsProps) {
       <ins
         className="adsbygoogle"
         style={{ display: 'block' }}
-        data-ad-client="ca-pub-your-adsense-id"
+        data-ad-client="ca-pub-6884566372095161"
         data-ad-slot={slot}
         data-ad-format="auto"
         data-full-width-responsive="true"
