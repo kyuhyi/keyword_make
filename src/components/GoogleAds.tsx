@@ -9,11 +9,11 @@ declare global {
 }
 
 interface GoogleAdsProps {
-  slot: string
   className?: string
+  format?: string
 }
 
-export default function GoogleAds({ slot, className = "" }: GoogleAdsProps) {
+export default function GoogleAds({ className = "", format = "auto" }: GoogleAdsProps) {
   useEffect(() => {
     try {
       if (typeof window !== 'undefined') {
@@ -30,8 +30,7 @@ export default function GoogleAds({ slot, className = "" }: GoogleAdsProps) {
         className="adsbygoogle"
         style={{ display: 'block' }}
         data-ad-client="ca-pub-6884566372095161"
-        data-ad-slot={slot}
-        data-ad-format="auto"
+        data-ad-format={format}
         data-full-width-responsive="true"
       />
     </div>

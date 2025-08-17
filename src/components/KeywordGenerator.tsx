@@ -136,14 +136,14 @@ export default function KeywordGenerator() {
     return (
       <div className="min-h-screen bg-gray-900 text-white">
         <div className="w-full flex justify-center py-4 bg-gray-800">
-          <GoogleAds slot="1234567890" className="max-w-4xl" />
+          <GoogleAds className="max-w-4xl" />
         </div>
         <div className="max-w-7xl mx-auto px-4 py-8">
           <div className="animate-pulse">
             <div className="h-16 bg-gray-800 rounded mb-8"></div>
             <div className="flex gap-8 justify-center">
               <div className="hidden xl:block w-72">
-                <GoogleAds slot="2345678901" className="mb-4" />
+                <GoogleAds className="mb-4" />
               </div>
               <div className="max-w-4xl flex-1">
                 <div className="grid lg:grid-cols-2 gap-8">
@@ -152,7 +152,7 @@ export default function KeywordGenerator() {
                 </div>
               </div>
               <div className="hidden xl:block w-72">
-                <GoogleAds slot="5678901234" />
+                <GoogleAds />
               </div>
             </div>
           </div>
@@ -165,7 +165,7 @@ export default function KeywordGenerator() {
     <div className="min-h-screen bg-gray-900 text-white">
       {/* 애드센스 상단 광고 */}
       <div className="w-full flex justify-center py-4 bg-gray-800">
-        <GoogleAds slot="1234567890" className="max-w-4xl" />
+        <GoogleAds className="max-w-4xl" />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 py-8">
@@ -190,10 +190,10 @@ export default function KeywordGenerator() {
           {/* 왼쪽 사이드바 광고 */}
           <div className="hidden xl:block w-72 flex-shrink-0">
             <div className="sticky top-8">
-              <GoogleAds slot="2345678901" className="mb-4" />
+              <GoogleAds className="mb-4" />
             </div>
             <div className="sticky top-80">
-              <GoogleAds slot="3456789012" />
+              <GoogleAds />
             </div>
           </div>
 
@@ -268,7 +268,7 @@ export default function KeywordGenerator() {
 
                 {/* 모바일용 광고 */}
                 <div className="xl:hidden">
-                  <GoogleAds slot="4567890123" />
+                  <GoogleAds />
                 </div>
               </div>
 
@@ -335,10 +335,10 @@ export default function KeywordGenerator() {
           {/* 오른쪽 사이드바 광고 */}
           <div className="hidden xl:block w-72 flex-shrink-0">
             <div className="sticky top-8">
-              <GoogleAds slot="5678901234" className="mb-4" />
+              <GoogleAds className="mb-4" />
             </div>
             <div className="sticky top-80">
-              <GoogleAds slot="6789012345" />
+              <GoogleAds />
             </div>
           </div>
         </div>
@@ -360,7 +360,7 @@ export default function KeywordGenerator() {
 
         {/* 하단 광고 */}
         <div className="mt-8 flex justify-center">
-          <GoogleAds slot="7890123456" className="max-w-4xl" />
+          <GoogleAds className="max-w-4xl" />
         </div>
       </div>
     </div>
