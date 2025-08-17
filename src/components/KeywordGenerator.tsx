@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { Download, Plus, X, Copy, Check } from 'lucide-react'
 import Image from 'next/image'
+import GoogleAds from './GoogleAds'
 
 export default function KeywordGenerator() {
   const [mounted, setMounted] = useState(false)
@@ -134,21 +135,25 @@ export default function KeywordGenerator() {
   if (!mounted) {
     return (
       <div className="min-h-screen bg-gray-900 text-white">
-        <div className="w-full h-20 bg-gray-800 flex items-center justify-center text-gray-500 text-sm">
-          구글 애드센스 광고 영역 (728x90)
+        <div className="w-full flex justify-center py-4 bg-gray-800">
+          <GoogleAds slot="1234567890" className="max-w-4xl" />
         </div>
         <div className="max-w-7xl mx-auto px-4 py-8">
           <div className="animate-pulse">
             <div className="h-16 bg-gray-800 rounded mb-8"></div>
             <div className="flex gap-8 justify-center">
-              <div className="hidden xl:block w-72 h-64 bg-gray-800 rounded"></div>
+              <div className="hidden xl:block w-72">
+                <GoogleAds slot="2345678901" className="mb-4" />
+              </div>
               <div className="max-w-4xl flex-1">
                 <div className="grid lg:grid-cols-2 gap-8">
                   <div className="h-64 bg-gray-800 rounded"></div>
                   <div className="h-64 bg-gray-800 rounded"></div>
                 </div>
               </div>
-              <div className="hidden xl:block w-72 h-64 bg-gray-800 rounded"></div>
+              <div className="hidden xl:block w-72">
+                <GoogleAds slot="5678901234" />
+              </div>
             </div>
           </div>
         </div>
@@ -159,8 +164,8 @@ export default function KeywordGenerator() {
   return (
     <div className="min-h-screen bg-gray-900 text-white">
       {/* 애드센스 상단 광고 */}
-      <div className="w-full h-20 bg-gray-800 flex items-center justify-center text-gray-500 text-sm">
-        구글 애드센스 광고 영역 (728x90)
+      <div className="w-full flex justify-center py-4 bg-gray-800">
+        <GoogleAds slot="1234567890" className="max-w-4xl" />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 py-8">
@@ -184,15 +189,11 @@ export default function KeywordGenerator() {
         <div className="flex gap-8 justify-center">
           {/* 왼쪽 사이드바 광고 */}
           <div className="hidden xl:block w-72 flex-shrink-0">
-            <div className="bg-gray-800 p-4 rounded-lg sticky top-8">
-              <div className="w-full h-64 flex items-center justify-center text-gray-500 text-sm">
-                구글 애드센스 광고 영역 (300x250)
-              </div>
+            <div className="sticky top-8">
+              <GoogleAds slot="2345678901" className="mb-4" />
             </div>
-            <div className="bg-gray-800 p-4 rounded-lg mt-4 sticky top-80">
-              <div className="w-full h-64 flex items-center justify-center text-gray-500 text-sm">
-                구글 애드센스 광고 영역 (300x250)
-              </div>
+            <div className="sticky top-80">
+              <GoogleAds slot="3456789012" />
             </div>
           </div>
 
@@ -266,10 +267,8 @@ export default function KeywordGenerator() {
                 </div>
 
                 {/* 모바일용 광고 */}
-                <div className="xl:hidden bg-gray-800 p-4 rounded-lg">
-                  <div className="h-48 flex items-center justify-center text-gray-500 text-sm">
-                    구글 애드센스 광고 영역 (300x250)
-                  </div>
+                <div className="xl:hidden">
+                  <GoogleAds slot="4567890123" />
                 </div>
               </div>
 
@@ -335,15 +334,11 @@ export default function KeywordGenerator() {
 
           {/* 오른쪽 사이드바 광고 */}
           <div className="hidden xl:block w-72 flex-shrink-0">
-            <div className="bg-gray-800 p-4 rounded-lg sticky top-8">
-              <div className="w-full h-64 flex items-center justify-center text-gray-500 text-sm">
-                구글 애드센스 광고 영역 (300x250)
-              </div>
+            <div className="sticky top-8">
+              <GoogleAds slot="5678901234" className="mb-4" />
             </div>
-            <div className="bg-gray-800 p-4 rounded-lg mt-4 sticky top-80">
-              <div className="w-full h-64 flex items-center justify-center text-gray-500 text-sm">
-                구글 애드센스 광고 영역 (300x250)
-              </div>
+            <div className="sticky top-80">
+              <GoogleAds slot="6789012345" />
             </div>
           </div>
         </div>
@@ -365,9 +360,7 @@ export default function KeywordGenerator() {
 
         {/* 하단 광고 */}
         <div className="mt-8 flex justify-center">
-          <div className="w-full max-w-4xl h-20 bg-gray-800 flex items-center justify-center text-gray-500 text-sm">
-            구글 애드센스 광고 영역 (728x90)
-          </div>
+          <GoogleAds slot="7890123456" className="max-w-4xl" />
         </div>
       </div>
     </div>
