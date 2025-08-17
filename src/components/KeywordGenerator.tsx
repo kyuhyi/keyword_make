@@ -319,7 +319,7 @@ export default function KeywordGenerator() {
             <ol className="list-decimal list-inside space-y-2 text-gray-300">
               <li>키워드를 2개 이상 입력하세요.</li>
               <li>조합 옵션을 설정하세요.</li>
-              <li>'키워드 조합 생성' 버튼을 클릭하세요.</li>
+              <li>&apos;키워드 조합 생성&apos; 버튼을 클릭하세요.</li>
               <li>원하는 조합을 선택하고 복사하거나 다운로드하세요.</li>
             </ol>
           </div>

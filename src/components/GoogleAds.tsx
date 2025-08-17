@@ -4,18 +4,16 @@ import { useEffect } from 'react'
 
 declare global {
   interface Window {
-    adsbygoogle: any[]
+    adsbygoogle: unknown[]
   }
 }
 
 interface GoogleAdsProps {
   slot: string
-  width?: number
-  height?: number
   className?: string
 }
 
-export default function GoogleAds({ slot, width = 728, height = 90, className = "" }: GoogleAdsProps) {
+export default function GoogleAds({ slot, className = "" }: GoogleAdsProps) {
   useEffect(() => {
     try {
       if (typeof window !== 'undefined') {
